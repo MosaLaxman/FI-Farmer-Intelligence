@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Smooth fonts */
+html {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Dashboard background */
+body {
+  margin: 0;
+  background: #f7fdf9;
+}
