@@ -62,7 +62,7 @@ spring.datasource.password=${POSTGRES_DB_PASSWORD}
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-
+```
 
 ## How to Run the Project
 
