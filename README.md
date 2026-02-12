@@ -1,6 +1,6 @@
-# 🌱 Smart Farm AI
+#Farmer Intelligence
 
-Smart Farm AI is an AI-powered platform designed to help farmers optimize the use of resources such as **water, fertilizers, and labor** by analyzing **soil conditions, weather data, and crop details**.  
+Farmer Intelligence is an AI-powered platform designed to help farmers optimize the use of resources such as **water, fertilizers, and labor** by analyzing **soil conditions, weather data, and crop details**.  
 The system provides intelligent recommendations, crop predictions, cost optimization tips, and weather alerts — all in the farmer’s **preferred language**.
 
 ---
