@@ -20,15 +20,13 @@ The system provides intelligent recommendations, crop predictions, disease detec
 
 ## 📸 Screenshots
 
-| Feature | Screenshot |
-|---|---|
-![Dashboard](ui%20images/Screenshot%20(61).png) |
-![Farm Analysis](ui%20images/Screenshot%20(62).png) |
-![Crop Prediction](ui%20images/Screenshot%20(63).png) |
-![Disease Detection](ui%20images/Screenshot%20(64).png) |
-![Cost Optimization](ui%20images/Screenshot%20(65).png) |
-![Weather Alerts](ui%20images/Screenshot%20(66).png) |
-![History](ui%20images/Screenshot%20(67).png) |
+![Dashboard](ui%20images/Screenshot%20(61).png) 
+![Farm Analysis](ui%20images/Screenshot%20(62).png) 
+![Crop Prediction](ui%20images/Screenshot%20(63).png) 
+![Disease Detection](ui%20images/Screenshot%20(64).png) 
+![Cost Optimization](ui%20images/Screenshot%20(65).png) 
+![Weather Alerts](ui%20images/Screenshot%20(66).png) 
+![History](ui%20images/Screenshot%20(67).png) 
 
 ---
 
