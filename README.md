@@ -1,19 +1,34 @@
-# Farmer Intelligence
+# 🌱 Farmer Intelligence (Smart Farm AI)
 
 Farmer Intelligence is an AI-powered platform designed to help farmers optimize the use of resources such as **water, fertilizers, and labor** by analyzing **soil conditions, weather data, and crop details**.  
-The system provides intelligent recommendations, crop predictions, cost optimization tips, and weather alerts — all in the farmer’s **preferred language**.
+The system provides intelligent recommendations, crop predictions, disease detection, cost optimization tips, and weather alerts — all in the farmer’s **preferred language**.
 
 ---
 
 ## 🚀 Features
 
-- 🔐 User Authentication with language preference (English, Hindi, Telugu, Odia)
-- 🌾 Farm Analysis (Water, Fertilizer, Labor recommendations)
-- 🌱 Crop Prediction based on soil, season, and land area
-- 💰 Cost Optimization with cost breakdown and reduction tips
-- 🌦 Real-time Weather Alerts
-- 📜 User-wise history tracking
-- 🤖 AI-powered insights using **Google Gemini**
+- 🔐 **User Authentication** with language preference (English, Hindi, Telugu, Odia)
+- 🌾 **Farm Resource Analysis** (Water, Fertilizer, Labor recommendations)
+- 🌱 **Crop Prediction** based on soil, season, and land area
+- 🩺 **Crop Disease Detection** using Gemini Vision AI
+- 💰 **Cost Optimization** with cost breakdown and reduction tips
+- 🌦 **Real-time Weather Alerts**
+- 📜 **User History Tracking**
+- 🤖 **AI-Powered Insights** using Google Gemini
+
+---
+
+## 📸 Screenshots
+
+| Feature | Screenshot |
+|---|---|
+| Dashboard | ![Dashboard](ui%20images/Screenshot%20(61).png) |
+| Farm Analysis | ![Farm Analysis](ui%20images/Screenshot%20(62).png) |
+| Crop Prediction | ![Crop Prediction](ui%20images/Screenshot%20(63).png) |
+| Disease Detection | ![Disease Detection](ui%20images/Screenshot%20(64).png) |
+| Cost Optimization | ![Cost Optimization](ui%20images/Screenshot%20(65).png) |
+| Weather Alerts | ![Weather Alerts](ui%20images/Screenshot%20(66).png) |
+| User History | ![History](ui%20images/Screenshot%20(67).png) |
 
 ---
 
@@ -33,8 +48,10 @@ The system provides intelligent recommendations, crop predictions, cost optimiza
 - REST APIs
 
 ### AI & External Services
-- Google Gemini API
+- Google Gemini API (Text & Vision)
 - Weather API
+
+---
 
 ## 🔐 Environment Configuration (Required)
 
@@ -64,37 +81,48 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 ```
 
-## How to Run the Project
+---
 
-1. Backend (Spring Boot)
-cd backend/smart-farm-ai
+## 💻 How to Run the Project
+
+### 1. Backend (Spring Boot)
+```bash
+cd backend/smart-farm-ai/smart-farm-ai
 ./mvnw spring-boot:run
+```
 
-2. Frontend (React)
-cd frontend/smart-farm-ui
+### 2. Frontend (React)
+```bash
+cd frontend/smart-farm-ai-frontend
 npm install
 npm run dev
+```
 
-🌍 Language Support:
+---
+
+## 🌍 Language Support
 
 - English
 - Hindi
 - Telugu
 - Odia
+
 AI responses are dynamically generated in the user’s selected language.
 
-🧠 Future Enhancements:
+---
+
+## 🧠 Future Enhancements
 
 - Mobile app support
 - Scheduled weather alerts
 - Satellite-based crop analysis
 - Analytics dashboard
 - JWT-based authentication
-- Contribution
 
-This project was built as part of a hackathon / academic project.
-Contributions and suggestions are welcome.
+---
 
-🏆 Built With ❤️ for Sustainable Agriculture
+## 🏆 Contribution
 
-Smart Farm AI aims to empower farmers with AI-driven insights to improve productivity, reduce costs, and promote sustainable farming practices.
+This project was built as part of a hackathon / academic project. Contributions and suggestions are welcome.
+
+Built with ❤️ for Sustainable Agriculture.

@@ -11,13 +11,16 @@ import WeatherAlerts from "./pages/WeatherAlerts";
 import HistoryPage from "./pages/HistoryPage";
 import Dashboard from "./pages/DashBoard";
 import FeaturePage from "./pages/FeaturePage";
+import DiseaseDetection from "./pages/DiseaseDetection";
+import { LanguageProvider } from "./hooks/useLanguage";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+    <LanguageProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/register" element={<Register />} />
 
         <Route
           path="/dashboard"
@@ -78,8 +81,10 @@ function App() {
             </ProtectedRoute>
           }
         />
-      </Routes>
-    </BrowserRouter>
+          <Route path="/disease" element={<DiseaseDetection />} />
+        </Routes>
+      </BrowserRouter>
+    </LanguageProvider>
   );
 }
 

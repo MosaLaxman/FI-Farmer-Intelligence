@@ -21,6 +21,7 @@ public class GeminiService {
     private final RestTemplate restTemplate = new RestTemplate();
     private final ObjectMapper objectMapper = new ObjectMapper();
 
+    // 🔹 TEXT-ONLY AI (existing)
     public String getAiRecommendation(String prompt) {
         try {
             Map<String, Object> body = Map.of(
@@ -49,7 +50,42 @@ public class GeminiService {
         }
     }
 
-    // ✅ REQUIRED METHOD
+    // 🔥 NEW: IMAGE + TEXT (Gemini Vision)
+    public String getAiRecommendationWithImage(String prompt, String base64Image) {
+        try {
+            String requestBody = """
+            {
+              "contents": [
+                {
+                  "parts": [
+                    { "text": "%s" },
+                    {
+                      "inline_data": {
+                        "mime_type": "image/jpeg",
+                        "data": "%s"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            """.formatted(prompt, base64Image);
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_JSON);
+
+            HttpEntity<String> entity = new HttpEntity<>(requestBody, headers);
+
+            String url = apiUrl + "?key=" + apiKey;
+
+            return restTemplate.postForObject(url, entity, String.class);
+
+        } catch (Exception e) {
+            return "Gemini Image API error: " + e.getMessage();
+        }
+    }
+
+    // 🔹 EXTRACT TEXT FROM RESPONSE
     public String extractTextFromGeminiResponse(String geminiResponse) {
         try {
             JsonNode root = objectMapper.readTree(geminiResponse);

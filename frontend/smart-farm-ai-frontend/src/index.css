@@ -1,12 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
-/* Smooth fonts */
-html {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+:root {
+  color: #0f172a;
+  font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(93, 173, 118, 0.15), transparent 30%),
+    linear-gradient(180deg, #f8fcf8 0%, #f2f7f3 52%, #edf4ef 100%);
 }
 
-/* Dashboard background */
+html {
+  font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  background: #f7fdf9;
+  min-height: 100vh;
+  background: transparent;
+  color: #0f172a;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(22, 163, 74, 0.18);
+  color: #14532d;
 }
